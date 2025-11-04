@@ -9,8 +9,8 @@ app = Flask(__name__)
 @app.route('/stakeholder-venn', methods=['POST'])
 def generate_stakeholder_venn():
  try:
- data = request.json
- categorias = data['categorias']
+  data = request.json
+  categorias = data['categorias']
  
  # Crear figura
  fig, ax = plt.subplots(figsize=(18, 14))
